@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name-input" type="text" placeholder="Enter your name" />
+<button id="my-button">Click Me</button>
+
+<script>
+  var myButton = document.querySelector('#my-button');
+  //Creates a variable for the button -->
+  var nameInput = document.querySelector('#name-input');
+  // creates a variable for the input from the button-->
+
+  //creates the button-->
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+      //throws an alert that says hello plus your input-->
+    }
+  });
+</script>
+
+</body>
+</html>
